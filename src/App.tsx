@@ -11,7 +11,7 @@ function App() {
       {/* Show header only if count > 0 */}
       {count > 0 && <h2 className="counter-header">Counter now is: {count}</h2>}
 
-      <div className="buttons">
+      <div className="buttons">    
         <button onClick={() => setCount((prev) => prev+1)}>Decrease</button>
         <span className="value">{count}</span>
         <button onClick={() => setCount((prev) => prev + 1)}>Increase</button>
