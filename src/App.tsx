@@ -12,9 +12,9 @@ function App() {
       {count > 0 && <h2 className="counter-header">Counter now is: {count}</h2>}
 
       <div className="buttons">
-        <button onClick={() => setCount(count - 1)}>Decrease</button>
+        <button onClick={() => setCount((prev) => prev+1)}>Decrease</button>
         <span className="value">{count}</span>
-        <button onClick={() => setCount(count + 1)}>Increase</button>
+        <button onClick={() => setCount((prev) => prev + 1)}>Increase</button>
       </div>
     </div>
   );
